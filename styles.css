@@ -12,7 +12,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 20px;
+    padding: 20px 15px; /* Adjusted padding for smaller screens */
     background-color: #0288d1; /* Dark blue background */
     color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -20,7 +20,7 @@ header {
 
 header h1 {
     margin: 0;
-    font-size: 1.5em;
+    font-size: 1.2em; /* Reduced font size for smaller screens */
 }
 
 nav {
@@ -32,7 +32,7 @@ nav ul {
     padding: 0;
     margin: 0;
     display: flex;
-    gap: 15px;
+    gap: 10px; /* Reduced gap for smaller screens */
 }
 
 nav ul li {
@@ -52,17 +52,18 @@ nav ul li a:hover {
 
 /* Main content area */
 main {
-    padding: 20px;
+    padding: 15px; /* Adjusted padding for mobile */
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 100%; /* Full width on smaller screens */
+    padding: 0 15px; /* Add padding inside the container */
     margin: 0 auto;
 }
 
 /* Button styles */
 button {
-    padding: 10px 50px;
+    padding: 10px 30px; /* Reduced padding for smaller screens */
     background-color: #0288d1; /* Dark blue background */
     color: #fff;
     border: none;
@@ -79,39 +80,80 @@ button:hover {
 /* Game grid styles */
 .game-grid {
     display: grid;
-    grid-template-columns: 1fr; /* Single column layout */
-    gap: 20px;
-    padding: 20px;
+    grid-template-columns: 1fr; /* Single column layout on mobile */
+    gap: 15px;
+    padding: 15px;
 }
 
+/* Game card styles */
 .game-card {
-    display: flex; /* Use flexbox for layout */
-    align-items: center; /* Align items vertically in the center */
-    background-color: #ffffff; /* White background for contrast */
+    display: flex; /* Flexbox layout */
+    align-items: center; /* Align items vertically */
+    background-color: #ffffff; /* White background */
     border: 1px solid #81d4fa; /* Light blue border */
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    text-align: left; /* Align text to the left */
-    padding: 15px; /* Add padding inside the card */
-    gap: 15px; /* Space between image and text */
+    text-align: left;
+    padding: 15px;
+    gap: 15px;
 }
 
 .game-card img {
-    width: 150px; /* Fixed width for image */
-    height: auto; /* Maintain aspect ratio */
+    width: 100px; /* Reduced image size for mobile */
+    height: auto;
 }
 
 .game-card-content {
-    flex: 1; /* Take up remaining space */
+    flex: 1;
 }
 
 .game-card h2 {
     margin: 0;
-    font-size: 1.5em;
+    font-size: 1.2em; /* Reduced font size for smaller screens */
     color: #0288d1; /* Dark blue text */
 }
 
+/* Difficulty buttons */
 .difficulty-buttons {
-    margin-top: 10px; /* Space above buttons */
+    display: flex;
+    justify-content: center; /* Center the buttons */
+    gap: 10px; /* Space between buttons */
+    margin-top: 10px;
+}
+
+/* Responsive Styles */
+@media (min-width: 600px) {
+    header {
+        padding: 30px 20px; /* Restore padding for larger screens */
+    }
+
+    header h1 {
+        font-size: 1.5em; /* Restore font size */
+    }
+
+    nav ul {
+        gap: 15px; /* Restore gap */
+    }
+
+    .container {
+        max-width: 1200px; /* Restore max-width on larger screens */
+        padding: 0;
+    }
+
+    button {
+        padding: 10px 50px; /* Restore button padding for larger screens */
+    }
+
+    .game-card img {
+        width: 150px; /* Restore image size */
+    }
+
+    .game-card h2 {
+        font-size: 1.5em; /* Restore font size */
+    }
+
+    .difficulty-buttons {
+        justify-content: flex-start; /* Left-align the buttons */
+    }
 }
