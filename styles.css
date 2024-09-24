@@ -1,0 +1,117 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0f7fa; /* Light blue background */
+    color: #333; /* Dark text color for readability */
+}
+
+/* Header as navigation */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 20px;
+    background-color: #0288d1; /* Dark blue background */
+    color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+nav {
+    margin-left: auto;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #81d4fa; /* Light blue on hover */
+}
+
+/* Main content area */
+main {
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Button styles */
+button {
+    padding: 10px 50px;
+    background-color: #0288d1; /* Dark blue background */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #0277bd; /* Slightly darker blue on hover */
+}
+
+/* Game grid styles */
+.game-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column layout */
+    gap: 20px;
+    padding: 20px;
+}
+
+.game-card {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Align items vertically in the center */
+    background-color: #ffffff; /* White background for contrast */
+    border: 1px solid #81d4fa; /* Light blue border */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left; /* Align text to the left */
+    padding: 15px; /* Add padding inside the card */
+    gap: 15px; /* Space between image and text */
+}
+
+.game-card img {
+    width: 150px; /* Fixed width for image */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.game-card-content {
+    flex: 1; /* Take up remaining space */
+}
+
+.game-card h2 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #0288d1; /* Dark blue text */
+}
+
+.difficulty-buttons {
+    margin-top: 10px; /* Space above buttons */
+}

@@ -1,0 +1,25 @@
+body {
+    justify-content: center;
+    align-items: center;
+    background-color: #70c5ce;
+    margin: 0;
+    flex-direction: column;
+}
+
+canvas {
+    border: 2px solid black;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%; /* Take full height to center content vertically */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

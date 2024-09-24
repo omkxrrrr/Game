@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flappy Bird</title>
+    <link rel="stylesheet" href="flappybird.css">
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <header>
+        <h1>Flappy Bird</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <canvas id="gameCanvas" width="280" height="512"></canvas>
+        </div>
+        <h2>Press Spacebar to play.</h2>
+    </main>
+
+    <img id="birdDown" src="assets\images\sprites\Bird_down.png" hidden>
+    <img id="birdMid" src="assets\images\sprites\Bird_mid.png" hidden>
+    <img id="birdUp" src="assets\images\sprites\Bird_up.png" hidden>
+    <img id="bg" src="assets\images\sprites\Background.png" hidden>
+    <img id="floor" src="assets\images\sprites\Floor.png" hidden>
+    <img id="pipe" src="assets\images\sprites\Pipe.png" hidden>
+    <img id="bgGameOver" src="assets\images\sprites\Game_Over.png" hidden>
+
+    <script src="flappybird.js"></script>
+</body>
+</html>

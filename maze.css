@@ -1,0 +1,16 @@
+canvas {
+    border: 2px solid #000000; /* Dark blue border */
+    display: block; /* Ensures canvas is treated as a block element */
+    margin: 0 auto; /* Center horizontally */
+    background-color: #f0f0f0; /* Light gray background */
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.button-container button {
+    margin: 0 5px; /* Add some spacing between buttons */
+}
