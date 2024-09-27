@@ -30,6 +30,7 @@ canvas {
 
     .button-container {
         flex-direction: column; /* Stack buttons vertically on small screens */
+        align-items: center;
     }
 
     .button-container button {
